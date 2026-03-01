@@ -1,0 +1,70 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Coming Soon - Moshing Pickle</title>
+	</head>
+	<body>
+		<div class="left">
+			<h1>Hey! This site is not yet complete, so you're getting this page at the moment.</h1>
+			<h2>Once I'm ready to launch, I'll let you know.</h2>
+			<br />
+			<h3>In the meantime, you can visit my Instagram with the QR code below, or @pickleguy</h3>
+			<img src="qr.svg" alt="QR to Instagram @pickleguy" />
+		</div>
+		<img src="pickle.png" class="pickle" alt="The pickle guy!" />
+		<img src="perry.png" class="perry" />
+	</body>
+<style>
+	@font-face {
+		font-family: Pickle;
+		src: url("Spicy Pickle.woff");
+	}
+
+	body {
+		font-family: sans;
+		background-color: #6a9954;
+		margin: 0;
+		padding: 0;
+	}
+
+	.left {
+		width: 50%;
+		height: fit-content;
+		background-color: #77ac5fa0;
+		backdrop-filter: blur(10px);
+
+		padding: 1.75rem 2rem;
+
+		box-shadow: 5px 5px 15px 5px #4f733f80;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-40%, -50%);
+
+		z-index: 10;
+	}
+
+	.pickle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+	}
+
+	.perry {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		transform: translate(0, 50%);
+		transition: all 0.25s ease;
+		cursor: pointer;
+	}
+
+	.perry:hover {
+		transform: translate(0, 0);
+	}
+</style>
+</html>
