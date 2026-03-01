@@ -55,6 +55,7 @@
 		top: 0;
 		left: 0;
 		height: 100vh;
+		z-index: 5;
 	}
 
 	.perry {
@@ -65,10 +66,21 @@
 		transform: translate(0, 50%);
 		transition: all 0.25s ease;
 		cursor: pointer;
+		z-index: 20;
 	}
 
 	.perry:hover {
 		transform: translate(0, 0);
+	}
+
+	@media (max-width: 768px) {
+		.left {
+			width: 100vw;
+			left: 0;
+			top: 50%;
+
+			transform: translate(0, -50%);
+		}
 	}
 </style>
 </html>
